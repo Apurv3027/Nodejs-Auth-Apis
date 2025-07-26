@@ -3,7 +3,7 @@ require('dotenv').config();
 const mongoose = require('mongoose');
 
 // MongoDB Atlas cluster connection
-const MONGODB_ATLAS_URI = process.env.MONGODB_ATLAS_URI;
+const MONGODB_ATLAS_URI = process.env.MONGODB_ATLAS_URI || 'mongodb+srv://apurvp002:lCJrN328n1msxQmI@authapi.fowvcrz.mongodb.net/auth_api?retryWrites=true&w=majority';
 
 // Enhanced connection options for MongoDB Atlas
 const connectDB = async () => {
@@ -12,11 +12,10 @@ const connectDB = async () => {
         console.log('MongoDB Atlas URI:', process.env.MONGODB_ATLAS_URI ? 'Set' : 'Not set');
 
         // const conn = await mongoose.connect(MONGODB_ATLAS_URI, {
-        const conn = await mongoose.connect(process.env.MONGODB_ATLAS_URI, {
+        const conn = await mongoose.connect(MONGODB_ATLAS_URI, {
             // Additional options for Atlas connection
             serverSelectionTimeoutMS: 5000, // Keep trying to send operations for 5 seconds
             socketTimeoutMS: 45000, // Close sockets after 45 seconds of inactivity
-            bufferCommands: false, // Disable mongoose buffering
         });
 
         console.log(`MongoDB Atlas connected successfully: ${conn.connection.host}`);

@@ -69,8 +69,8 @@ nodejs-auth-api/
 ## API Documentation
 
 Interactive API documentation is available via Swagger UI. Use the following links to explore and test all authentication APIs directly from your browser:
-- Development URL: http://localhost:3000/api-docs/
-- Production URL: https://nodejs-auth-apis-i66p.onrender.com/api-docs/
+- Development URL: http://localhost:3000
+- Production URL: https://nodejs-auth-apis-i66p.onrender.com
 
 Once the server is running locally or deployed, open the respective URL in your browser to access the full API reference.
 

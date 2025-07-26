@@ -1,6 +1,6 @@
 # Node.js Authentication API
 
-A complete authentication API built with Node.js, Express, MongoDB, and Swagger UI documentation.
+A complete authentication API built with Node.js, Express, MongoDB Atlas, and Swagger UI documentation.
 
 ## Features
 
@@ -8,7 +8,7 @@ A complete authentication API built with Node.js, Express, MongoDB, and Swagger 
 - JWT-based authentication
 - Password hashing with bcrypt
 - Input validation with Joi
-- MongoDB integration with Mongoose
+- MongoDB Atlas integration with Mongoose
 - Swagger UI documentation
 - MVC architecture
 - Error handling
@@ -57,9 +57,7 @@ nodejs-auth-api/
    PORT = 3000
    ```
 
-4. Start MongoDB service on your machine
-
-5. Run the application:
+4. Run the application:
    ```bash
    # Development mode
    npm run dev
@@ -70,6 +68,10 @@ nodejs-auth-api/
 
 ## API Documentation
 
+Interactive API documentation is available via Swagger UI.
+- Development URL: http://localhost:3000/api-docs/
+- Production URL: https://nodejs-auth-apis-i66p.onrender.com/api-docs/
+
 Once the server is running, visit `http://localhost:3000/api-docs/` to view the Swagger UI documentation.
 
 ## API Endpoints
@@ -78,7 +80,7 @@ Once the server is running, visit `http://localhost:3000/api-docs/` to view the 
 
 - `POST /api/auth/register` - Register a new user
 - `POST /api/auth/login` - Login user
-- `POST /api/auth/logout` - Logout user and invalidate token
+- `POST /api/auth/logout` - Logout user and invalidate the token
 - `POST /api/auth/forgot-password` - Request password reset
 - `POST /api/auth/reset-password` - Reset password using token
 - `GET /api/auth/me` - Get current user profile (requires authentication)
@@ -142,7 +144,7 @@ curl -X GET http://localhost:3000/api/auth/me \
 
 - Node.js
 - Express.js
-- MongoDB & Mongoose
+- MongoDB Atlas & Mongoose
 - JWT (JSON Web Tokens)
 - bcryptjs
 - Joi (validation)

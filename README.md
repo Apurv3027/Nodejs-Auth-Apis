@@ -20,6 +20,8 @@ A complete authentication API built with Node.js, Express, MongoDB, and Swagger 
 nodejs-auth-api/
 ├── controllers/
 │   └── authController.js
+├── db/
+│   └── connection.js
 ├── middleware/
 │   ├── auth.js
 │   └── validation.js

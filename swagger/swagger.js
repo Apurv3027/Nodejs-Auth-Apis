@@ -10,10 +10,10 @@ const swaggerOptions = {
             description: 'A simple authentication API with Node.js, Express, and MongoDB',
         },
         servers: [
-            // {
-            //     url: 'http://localhost:3000',
-            //     description: 'Development server',
-            // },
+            {
+                url: 'http://localhost:3000',
+                description: 'Development server',
+            },
             {
                 url: 'https://nodejs-auth-apis-i66p.onrender.com/',
                 description: 'Production server',

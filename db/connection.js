@@ -3,7 +3,7 @@ require('dotenv').config();
 const mongoose = require('mongoose');
 
 // MongoDB Atlas cluster connection
-const MONGODB_ATLAS_URI = process.env.MONGODB_ATLAS_URI || 'mongodb+srv://apurvp002:lCJrN328n1msxQmI@authapi.fowvcrz.mongodb.net/auth_api?retryWrites=true&w=majority';
+const MONGODB_ATLAS_URI = process.env.MONGODB_ATLAS_URI;
 
 // Enhanced connection options for MongoDB Atlas
 const connectDB = async () => {

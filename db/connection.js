@@ -11,7 +11,8 @@ const connectDB = async () => {
         console.log('Attempting to connect to MongoDB...');
         console.log('MongoDB Atlas URI:', process.env.MONGODB_ATLAS_URI ? 'Set' : 'Not set');
 
-        const conn = await mongoose.connect(MONGODB_ATLAS_URI, {
+        // const conn = await mongoose.connect(MONGODB_ATLAS_URI, {
+        const conn = await mongoose.connect(process.env.MONGODB_ATLAS_URI, {
             // Additional options for Atlas connection
             serverSelectionTimeoutMS: 5000, // Keep trying to send operations for 5 seconds
             socketTimeoutMS: 45000, // Close sockets after 45 seconds of inactivity

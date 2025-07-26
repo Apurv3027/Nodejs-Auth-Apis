@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+require('dotenv').config();
 
 // MongoDB Atlas cluster connection
 const MONGODB_ATLAS_URI = process.env.MONGODB_ATLAS_URI;

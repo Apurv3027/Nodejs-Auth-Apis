@@ -44,7 +44,7 @@ app.get('/', (req, res) => {
         // Inject dynamic data
         const serverInfo = {
             uptime: formatUptime(process.uptime()),
-            version: process.env.npm_package_version || '1.0.0',
+            version: process.env.APP_VERSION || '1.0.0',
             environment: process.env.NODE_ENV || 'Development',
             nodeVersion: process.version,
             timestamp: new Date().toLocaleString()

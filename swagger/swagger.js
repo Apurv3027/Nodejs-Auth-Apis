@@ -6,7 +6,7 @@ const swaggerOptions = {
         openapi: '3.0.0',
         info: {
             title: 'Authentication API',
-            version: '1.0.0',
+            version: '1.0.1',
             description: 'A simple authentication API with Node.js, Express, and MongoDB',
         },
         servers: [
